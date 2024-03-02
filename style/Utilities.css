@@ -1,0 +1,99 @@
+@import url('./search.css');
+@import url('./title.css');
+@import url('./infoDev.css');
+
+:root {
+    --dodger_blue: hsl(212, 100%, 50%);
+    --light_gray: hsl(217, 20%, 51%);
+    --light_gray_blue: hsl(217, 35%, 45%);
+    --very_dark_gray: hsl(217, 21%, 21%);
+    --very_light_gray: hsl(227, 100%, 98%);
+    --white: hsl(0, 0%, 100%);
+
+    --dark: hsl(220, 40%, 13%);
+    --dark_gray: hsl(222, 41%, 20%);
+
+    --font-family: 'Space Mono', bold;
+}
+
+html {
+    box-sizing: border-box; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    line-height: 25px;
+
+    color: var(--light_gray)!important;
+    background-color: var(--very_light_gray);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    line-height: 25px;
+
+    color: var(--light_gray)!important;
+}
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    color: var(--very_dark_gray);
+}
+
+h2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--very_dark_gray);
+}
+
+h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: lighter;
+    color: var(--dodger_blue);
+}
+
+h4 {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: lighter;
+    color: var(--light_gray_blue);
+}
+
+input, input::placeholder{
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+
+    color: var(--light_gray_blue);
+}
+
+
+button {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+main{
+    width: 730px;
+}

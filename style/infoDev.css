@@ -1,0 +1,107 @@
+.infoDev__box{
+    width: 730px;
+    height: 419px;
+}
+
+.infoDev {
+    width: 100%;
+    border-radius: 15px;
+
+    padding: 40px;
+
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+    display: grid;
+    grid-template-columns: 170px 1fr;
+     grid-template-rows: auto auto;
+}
+
+
+
+.infoDev__img{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: auto;
+}
+.infoDev__img img {
+    width: 117px;
+    height: 117px;
+}
+
+
+
+.infoDev__name__box {
+    display: flex;
+    flex-direction: column;
+    width: min(480px, 100%);
+    height: auto;
+}
+.infoDev__name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+
+
+.infoDev__contact__statdistic{
+    grid-area: 2 / 2;
+}
+.infoDev__statdistic{
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: start;
+
+    border-radius: 15px;
+
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: var(--very_light_gray);
+}
+.infoDev__statdistic h4, .infoDev__statdistic h2 {
+    margin: 0px;
+}
+
+.infoDev__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    margin-top: 20px;
+}
+.contact .iconContact{
+    width: 35px;
+
+}
+.contact p{
+    margin: 0px;
+}
+
+
+.infoDev__name #name, .infoDev #join {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.infoDev__name #username{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+

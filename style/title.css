@@ -1,0 +1,40 @@
+.titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 38px;
+}
+
+
+
+.modeColor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#iconMode{
+    width: 20px;
+    height: 20px;
+
+    margin-left: 10px;
+    border:none;
+    /* background-image: url('../assets/icon-moon.svg'); */
+}
+
+
+.modeColor h4, .modeColor #iconMode{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    user-select: none;
+}
+
+.titles .modeColor:hover,
+.titles .modeColor:hover h4,
+.titles .modeColor:hover img {
+    cursor: pointer;
+    color: #222731 !important;
+    filter: brightness(0%) opacity(1);
+}
