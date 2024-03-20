@@ -8,7 +8,7 @@ input:focus {
 }
 
 .input-with-icon {
-    width: 730px;
+    width: min(730px, 100%);
     height: 69px;
     
     margin-top: 20px;

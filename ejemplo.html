@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .perfil {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .perfil img {
+        width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+        height: auto;
+        margin-right: 20px; /* Ajusta el margen entre la imagen y la información */
+      }
+
+      .nombre {
+        flex: 1; /* Hace que el nombre ocupe todo el espacio disponible */
+      }
+
+      .bio {
+        flex: 1; /* Hace que la bio ocupe todo el espacio disponible */
+        margin-top: 10px; /* Ajusta el margen entre el nombre y la bio */
+      }
+
+      @media screen and (max-width: 375px) {
+        .perfil img {
+          margin-right: 0; /* Elimina el margen entre la imagen y la información en dispositivos móviles */
+        }
+
+        .nombre,
+        .bio {
+          flex: auto; /* Restablece la propiedad flex a su valor por defecto */
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="perfil" style="width: 100%;background-color: red;">
+        <img src="./assets/usuario.svg" alt="Avatar">
+        <div class="nombre">
+            <h2>Nombre</h2>
+        </div>
+        <div class="bio">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, minus provident! Quod, perspiciatis libero? Ipsam nam culpa sit repudiandae eveniet ab iusto recusandae obcaecati quis. Blanditiis totam mollitia inventore cumque?</p>
+        </div>
+    </div>
+</body>
+</html>

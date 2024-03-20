@@ -95,5 +95,34 @@ button {
 }
 
 main{
-    width: 730px;
+    width: min(730px, 100%);
+}
+
+
+
+@media screen and (max-width: 376px) {
+        p, button {
+        font-size: 75%; /* Reduce el tamaño de la fuente al 80% */
+    }
+
+    h1 {
+        font-size: 95%; /* Reducción proporcional al tamaño original */
+    }
+
+    h2 {
+        font-size: 90%; /* Reducción proporcional al tamaño original */
+    }
+
+    h3 {
+        font-size: 80%; /* Reducción proporcional al tamaño original */
+    }
+
+    h4 {
+        font-size: 75%; /* Reducción proporcional al tamaño original */
+    }
+
+    h5 {
+        font-size: 70%; /* Reducción proporcional al tamaño original */
+    }
+
 }

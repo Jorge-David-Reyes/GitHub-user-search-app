@@ -1,68 +1,77 @@
-.infoDev__box{
-    width: 730px;
-    height: 419px;
-}
-
+/* styles for the developer info */
 .infoDev {
-    width: 100%;
+    width: min(730px, 100%);
+    height: min(419px, 100%);
     border-radius: 15px;
-
     padding: 40px;
 
     background-color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
     display: grid;
-    grid-template-columns: 170px 1fr;
-     grid-template-rows: auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(12, 1fr); */
 }
 
 
-
-.infoDev__img{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    width: 100%;
-    height: auto;
-}
+/* styles for the developer image */
 .infoDev__img img {
     width: 117px;
     height: 117px;
 }
-
-
-
-.infoDev__name__box {
+.infoDev__img{
     display: flex;
-    flex-direction: column;
-    width: min(480px, 100%);
-    height: auto;
+    justify-content: center;
+    align-items: start;
+
+    grid-column: 1 / 4;
+    grid-row: 1/4
 }
+
+
+
+/* styles for the developer name and bio*/
 .infoDev__name {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
+
+    grid-column: 4 / 13;
+    grid-row: 1/2;
+}
+.infoDev__bio{
+    grid-column: 4 / 13;
+    grid-row: 2/4;
+}
+
+.infoDev__name #name, .infoDev #join {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.infoDev__name #username{
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 
 
-
+/*style for the stats and contact*/
 .infoDev__contact__statdistic{
-    grid-area: 2 / 2;
+    grid-column: 4 / 13;
+    grid-row: 4/5;
 }
 .infoDev__statdistic{
     height: 85px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    align-items: start;
+    justify-content:space-around;
+    align-items:center;
 
     border-radius: 15px;
 
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
 
@@ -87,21 +96,105 @@
     margin-top: 20px;
 }
 .contact .iconContact{
-    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 
+    width: 35px;
 }
 .contact p{
     margin: 0px;
 }
 
 
-.infoDev__name #name, .infoDev #join {
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-.infoDev__name #username{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
+@media screen and (max-width: 376px) {
+    .infoDev{
+        padding: 25px;
+    }
+    .infoDev__name #username, .infoDev__name #name, .infoDev #join{
+        
+        margin-bottom: 1px;
+    }
 
 
+    .infoDev__img{
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoDev__img img{
+        height: 70px;
+        width: 70px;
+    }
+
+
+    .infoDev__name {    
+        grid-column: 5 / 13;
+        grid-row: 2 / 3;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .infoDev__bio{
+        grid-column: 1 / 13;
+        grid-row: 5/6;
+    }
+
+    
+    .infoDev__contact__statdistic{
+        grid-column: 1 / 13;
+        grid-row: 6 / 7;
+    }
+    .infoDev__contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .stats{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+    .infoDev{
+        padding: 25px;
+    }
+
+
+    .infoDev__img{
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+    }
+    .infoDev__img img{
+        height: 117px;
+        width: 117px;
+    }
+
+
+    .infoDev__name {    
+        grid-column: 5 / 13;
+        grid-row: 2 / 3;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .infoDev__bio{
+        grid-column: 1 / 13;
+        grid-row: 5/6;
+    }
+
+    
+    .infoDev__contact__statdistic{
+        grid-column: 1 / 13;
+        grid-row: 6 / 7;
+    }
+}
+  
